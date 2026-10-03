@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portable Web Spaces</title>
+<meta name="description" content="Portable Web Spaces is a general purpose permissioned storage API.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://portablewebspaces.org/">
+<meta property="og:title" content="Portable Web Spaces">
+<meta property="og:description" content="Portable Web Spaces is a general purpose permissioned storage API.">
+<meta property="og:image" content="https://portablewebspaces.org/logo.png">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#">
+    <img src="logo.png" alt="" width="17" height="28">
+    <span>portable web spaces</span>
+  </a>
+  <span class="tag">v0.5 draft</span>
+  <nav class="toplinks">
+    <a href="https://w3c-ccg.github.io/wallet-attached-storage-spec/">spec</a>
+    <a href="https://github.com/w3c-ccg/wallet-attached-storage-spec/">github</a>
+    <a href="https://github.com/w3c-ccg/wallet-attached-storage-spec/issues/">issues</a>
+  </nav>
+</header>
+
+<main class="content">
+
+  <section class="hero">
+    <p class="eyebrow">// specification &middot; unofficial draft</p>
+    <h1>Portable Web Spaces</h1>
+    <p class="lede">A general purpose permissioned storage API. Spaces hold Collections, Collections hold Resources, and every request is authorized with capabilities rooted in a DID you control.</p>
+    <p class="note">Formerly <strong>Wallet Attached Storage (WAS)</strong>. The specification is being renamed; the current editor's draft is at <a href="https://w3c-ccg.github.io/wallet-attached-storage-spec/">w3c-ccg.github.io/wallet-attached-storage-spec</a>.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="https://w3c-ccg.github.io/wallet-attached-storage-spec/">read the spec &rarr;</a>
+      <a class="btn" href="https://github.com/w3c-ccg/wallet-attached-storage-spec/">github</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>Portable Web Spaces brings together lessons learned from many attempts to standardize permissioned cloud storage. The specification provides:</p>
+    <ul>
+      <li>A set of design constraints, goals, and requirements.</li>
+      <li>A tiered, composable data model for storage primitives.</li>
+      <li>An HTTP API binding for storage operations.</li>
+      <li>An authorization profile based on DIDs, zCaps, and HTTP Signatures.</li>
+    </ul>
+    <div class="callout">
+      <span class="callout-label">note</span>
+      <p>A conformant minimal server implements only Resource CRUD and the authorization profile. Every other endpoint group is optional.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>portable web spaces &middot; w3c credentials community group</span>
+    <span>text available under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+  </footer>
+</main>
+
+</body>
+</html>
