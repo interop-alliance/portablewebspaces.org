@@ -57,6 +57,7 @@ li::marker { color: var(--muted); }
 .btn:hover { background: var(--panel); color: var(--ink); }
 .btn.primary { background: var(--ink); color: #fff; }
 .btn.primary:hover { background: #333; color: #fff; }
+.hero-links { margin: 20px 0 0; font-size: 13px; }
 
 /* callout */
 .callout { border: 1px solid var(--line); background: var(--panel); padding: 14px 16px; border-radius: 4px; margin-top: 18px; }
